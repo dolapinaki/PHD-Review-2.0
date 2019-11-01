@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 20191030063122) do
   enable_extension "plpgsql"
 
   create_table "searches", force: :cascade do |t|
-    t.decimal  "uin"
+    t.integer  "uin"
     t.string   "first_name"
     t.string   "last_name"
-    t.decimal  "review_year"
+    t.integer  "review_year"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
